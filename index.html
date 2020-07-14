@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/ionicons@4.5.10-1/dist/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <title>Calendar App</title>
+  </head>
+  <body>
+    <div>
+      <div class="top">
+        <div class="today">
+          <div class="today__monthAndYear">T Month T year</div>
+          <div class="today__dayOfWeek">T Day of Week</div>
+          <div class="today__date">21</div>
+        </div>
+        <div class="calendar">
+          <div class="calendar__top">
+            <div class="calendar__btn1"><</div>
+            <div class="calendar__month">Month</div>
+            <div class="calendar__btn2">></div>
+          </div>
+          <div class="calendar__daysContainer">
+            <div class="calendar__daysItem">Sun</div>
+            <div class="calendar__daysItem">Mon</div>
+            <div class="calendar__daysItem">Tue</div>
+            <div class="calendar__daysItem">Wed</div>
+            <div class="calendar__daysItem">Thu</div>
+            <div class="calendar__daysItem">Fri</div>
+            <div class="calendar__daysItem">Sat</div>
+          </div>
+          <div class="calendar__datesContainer">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="bottom">
+        <div class="bottom__box">
+          <div class="list__inputLine">
+            <input type="text" class="list__addDesc" placeholder="Add Todo List">
+            <button class="list__addBtn"><i class="ion-ios-add-circle-outline"></i></button>
+          </div>
+
+          <div class="list__container">
+          </div>
+
+          <div class="options_container">
+            <div class="options__totalItems">Items left: </div><div class="options__totalItemsNum">00</div>
+            <div class="options__bundle">
+              <button class="option__showAll_on">All</button>
+              <button class="option__showActive">Active</button>
+              <button class="option__showComp">Complete</button>
+            </div>
+            <button class="option__clearComp">Clear Completed</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

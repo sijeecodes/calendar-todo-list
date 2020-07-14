@@ -1,0 +1,367 @@
+* {box-sizing: border-box; font-size: 16px; font-family: Open Serif;}
+
+body {
+  width: 100%;
+  text-align: center;
+}
+
+/************* Top (Calendar) ****************/
+.top {
+  display: inline-block;
+  width: 600px;
+  background: #999999;
+}
+
+.today {
+  float: left;
+  margin: 10px;
+  height: 280px;
+  width: 280px;
+  border: 1px solid black;
+  background: #999999;
+}
+
+.today__monthAndYear {
+  height: 30px;
+  font-size: 18px;
+  margin-top: 22px;
+}
+
+.today__dayOfWeek {
+  height: 28px;
+  font-size: 26px;
+}
+
+.today__date {
+  font-size: 130px;
+  line-height: 180px;
+}
+
+.calendar {
+  float: right;
+  margin: 10px;
+  height: 280px;
+  width: 280px;
+  border: 1px solid black;
+  background-color: #999999;
+  text-align: center;
+}
+
+.calendar__top {
+  padding: 18px;
+  font-size: 20px;
+  margin-top: 3px;
+  text-align: center;
+}
+
+.calendar__btn1 {
+  border: 1px solid black;
+  float: left;
+  height: 27px;
+  width: 27px;
+  font-size: 18px;
+}
+.calendar__btn1:active {
+  transform: translateY(2px);
+}
+.calendar__month {
+  display: inline-block;
+}
+
+.calendar__btn2 {
+  border: 1px solid black;
+  float: right;
+  height: 27px;
+  width: 27px;
+  font-size: 18px;
+}
+.calendar__btn2:active {
+  transform: translateY(2px);
+}
+
+.calendar__daysContainer {
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+}
+.calendar__daysItem {
+  text-align: center;
+  width: 31px;
+  height: 20px;
+  font-size: 15px;
+  margin: auto 2px;
+  margin-bottom: 5px;
+}
+
+.calendar__datesContainer {
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  justify-content: space-evenly;
+}
+.calendar__datesItem {
+  width: 31px;
+  height: 31px;
+  font-size: 18px;
+  line-height: 33px;
+  margin: auto 2px;
+}
+.calendar__datesItem:active {
+  transform: translateY(2px);
+}
+
+.calendar__datesItem_list {
+  width: 31px;
+  height: 31px;
+  margin: auto 2px;
+  font-size: 18px;
+  line-height: 29px;
+  border-radius: 50%;
+  border: 2px solid #777777;
+}
+
+.calendar__datesItem_selected {
+  width: 31px;
+  height: 31px;
+  margin: auto 2px;
+  font-size: 18px;
+  line-height: 33px;
+  border-radius: 50%;
+  background-color: #eeeeee;
+}
+
+/************* Bottom (Todo List) ****************/
+
+.bottom {
+  display:inline-block;
+  width: 600px;
+  background: #999999;
+  text-align: center;
+}
+
+.bottom__box {
+  display: inline-block;
+  width: 450px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+}
+
+.list__inputLine {
+  display: inline-block;
+}
+
+.list__addDesc {
+  display: inline-block;
+  float: left;
+  height: 30px;
+  width: 380px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+}
+
+.list__addBtn {
+  display: inline-block;
+  float: right;
+  margin-top: 10px;
+  margin-right: 8px;
+  background: none;
+  border: none;
+  line-height: 10px;
+}
+.list__addBtn:active {
+  transform: translateY(2px);
+}
+.list__addBtn:focus {
+  outline: none;
+}
+
+.ion-ios-add-circle-outline {
+  font-size: 30px;
+}
+
+.list__container {
+}
+
+.list__item {
+  display: inline-block;
+  border-bottom: 1px solid black;
+  width: 410px;
+  height: 33px;
+  margin-left: 6px;
+  margin-bottom: 2px;
+}
+
+.list__itemCheckBtn {
+  float: left;
+  margin-left: 1px;
+  background: none;
+  border: none;
+}
+.list__itemCheckBtn:active {
+  transform: translateY(2px);
+}
+.list__itemCheckBtn:focus {
+  outline: none;
+}
+.ion-ios-radio-button-off {
+  font-size: 20px;
+  line-height: 40px;
+}
+.ion-ios-checkmark-circle-outline {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.list__itemDesc {
+  display: inline-block;
+  float: left;
+  line-height: 40px;
+}
+.list__itemDelBtn {
+  display: inline-block;
+  float: right;
+  margin-right: 1px;
+  background: none;
+  border: none;
+}
+.list__itemDelBtn:active {
+  transform: translateY(2px);
+}
+.list__itemDelBtn:focus {
+  outline: none;
+}
+.ion-ios-close {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.list__compItemCheckBtn {
+  float: left;
+  margin-left: 1px;
+  background: none;
+  border: none;
+  color: grey;
+}
+.list__compItemCheckBtn:active {
+  transform: translateY(2px);
+}
+.list__compItemCheckBtn:focus {
+  outline: none;
+}
+.list__compItemDesc {
+  display: inline-block;
+  float: left;
+  line-height: 40px;
+  text-decoration: line-through;
+  text-decoration-color: grey;
+  color: grey;
+}
+
+.options__totalItems {
+  display: inline-block;
+  float: left;
+  margin-left: 23px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+.options__totalItemsNum {
+  display: inline-block;
+  text-align: left;
+  float: left;
+  width: 50px;
+  margin-left: 3px;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.options__bundle {
+  float: left;
+  margin-left: 2px;
+  margin-top: 2px;
+}
+.option__showAll {
+  font-size: 14px;
+  background: none;
+  border: 1px solid #999999;
+}
+.option__showAll:active {
+  transform: translateY(2px);
+}
+.option__showAll:focus {
+  outline: none;
+}
+.option__showAll_on {
+  font-size: 14px;
+  background: none;
+  border: 1px solid black;
+}
+.option__showAll_on:active {
+  transform: translateY(2px);
+}
+.option__showAll_on:focus {
+  outline: none;
+}
+
+.option__showActive {
+  font-size: 14px;
+  background: none;
+  border: 1px solid #999999;
+}
+.option__showActive:active {
+  transform: translateY(2px);
+}
+.option__showActive:focus {
+  outline: none;
+}
+.option__showActive_on {
+  font-size: 14px;
+  background: none;
+  border: 1px solid black;
+}
+.option__showActive_on:active {
+  transform: translateY(2px);
+}
+.option__showActive_on:focus {
+  outline: none;
+}
+
+.option__showComp {
+  font-size: 14px;
+  background: none;
+  border: 1px solid #999999;
+}
+.option__showComp:active {
+  transform: translateY(2px);
+}
+.option__showComp:focus {
+  outline: none;
+}
+.option__showComp_on {
+  font-size: 14px;
+  background: none;
+  border: 1px solid black;
+}
+.option__showComp_on:active {
+  transform: translateY(2px);
+}
+.option__showComp_on:focus {
+  outline: none;
+}
+
+.option__clearComp {
+  display: inline-block;
+  float: right;
+  margin-right: 9px;
+  margin-top: 3px;
+  background: none;
+  border: none;
+  font-size: 14px;
+}
+.option__clearComp:active {
+  transform: translateY(2px);
+}
+.option__clearComp:focus {
+  outline: none;
+}
